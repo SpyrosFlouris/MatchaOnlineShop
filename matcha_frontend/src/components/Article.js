@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Article({htext, ptext, image}){
+export default function Article({htext, ptext, image, onClick}){
 
     return(
-        <article className="article">
+        <article className="article" onClick={onClick}>
         <img src={image} alt="Article Image" />
           <h3>{htext}</h3>
           <p>{ptext}</p>
